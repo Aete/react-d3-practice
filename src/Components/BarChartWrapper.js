@@ -1,8 +1,8 @@
 import { useState, useRef, Fragment, useEffect } from 'react';
 import * as d3 from 'd3';
-import D3Chart from './D3Chart';
+import D3Chart from './D3Charts/D3Chart';
 
-function ChartWrapper() {
+function BarChartWrapper() {
   const container = useRef();
   const [chart, setChart] = useState(null);
   const [title, setTitle] = useState('men');
@@ -34,4 +34,4 @@ function ChartWrapper() {
   );
 }
 
-export default ChartWrapper;
+export default BarChartWrapper;
